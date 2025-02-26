@@ -1,6 +1,6 @@
 import { afficherPersonne } from './personne.js';
 
-console.log('Hello World!!!!');
+console.log('========== S1/EP1 ==============');
 
 const personne1: Personne = {
   name: 'Alice',
