@@ -6,15 +6,15 @@ Apprenez à créer et utiliser un fichier de déclaration (.d.ts) pour typer un 
 
 ### 1 - Création du module fictif
 
-- Dans un dossier nommé `mon-module`, créez un fichier `index.js` contenant :
+- Dans un dossier nommé `mon-module`, créez un fichier `index.ts` contenant :
 
   ```js
   function alerter(message) {
-    console.log("Alerte:", message);
+    console.log('Alerte:', message);
   }
 
   function logger(message) {
-    console.log("Log:", message);
+    console.log('Log:', message);
   }
 
   module.exports = { alerter, logger };
@@ -25,7 +25,7 @@ Apprenez à créer et utiliser un fichier de déclaration (.d.ts) pour typer un 
 - Dans le même dossier, créez un fichier mon-module.d.ts qui déclare :
 
 ```ts
-declare module "mon-module" {
+declare module 'mon-module' {
   export function alerter(message: string): void;
   export function logger(message: string): void;
 }
@@ -36,7 +36,7 @@ declare module "mon-module" {
 - Dans un fichier testModule.ts, importez le module :
 
 ```ts
-import { alerter, logger } from "mon-module";
+import { alerter, logger } from 'mon-module';
 ```
 
 - Appelez alerter("Test alerte") et logger("Test log") pour vérifier que le typage fonctionne.
