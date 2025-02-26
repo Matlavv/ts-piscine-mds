@@ -1,4 +1,4 @@
-import { Circle, Rectangle } from './formes';
+import { Circle, Rectangle } from './formes.js';
 
 console.log('============== S3/EP2 ===============');
 
